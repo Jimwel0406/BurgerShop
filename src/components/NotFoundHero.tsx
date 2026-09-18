@@ -41,7 +41,7 @@ export default function NotFoundHero() {
             <span
               aria-hidden="true"
               style={{ filter: "url(#rough-edge)" }}
-              className="text-distress block text-[clamp(5.5rem,15vw,15rem)] leading-[0.8] text-[#F9F6F2]"
+              className="text-distress block px-[0.05em] py-[0.4em] -mx-[0.05em] -my-[0.4em] text-[clamp(5.5rem,15vw,15rem)] leading-[0.8] text-[#F9F6F2]"
             >
               404
             </span>
