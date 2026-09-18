@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-black-brand: #0B0C0C;
+  --color-dark: #111111;
+  --color-charcoal: #171717;
+  --color-cream: #F1EBDD;
+  --color-offwhite: #F7F3EA;
+  --color-gray-muted: #A8A49B;
+  --color-red-brand: #C9151E;
+  --color-red-hover: #E01A24;
+
+  --font-display: var(--font-anton);
+  --font-script: var(--font-caveat);
+  --font-serif: var(--font-playfair);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-black-brand);
+  color: white;
+  overflow-x: hidden;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { transition: none !important; animation: none !important; }
+}
+
+img {
+  -webkit-user-drag: none;
+  user-drag: none;
+  pointer-events: none;
+}
+
+/* Skip link: off-screen until focused, so it adds no visible chrome */
+.skip-link {
+  position: absolute;
+  top: 0;
+  left: -9999px;
+  z-index: 100;
+}
+
+.skip-link:focus {
+  left: 1rem;
+  top: 1rem;
+  padding: 0.5rem 1rem;
+  background: var(--color-red-brand);
+  color: white;
+  font-weight: 600;
+  font-size: 0.875rem;
+}

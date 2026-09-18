@@ -1,0 +1,31 @@
+# Burger Shop
+
+> Burger Shop is a smash-burger restaurant serving beef patties smashed to order, with six burgers from $8.50 plus fries and drinks. This single-page site is the brand homepage: menu, order modes, and brand story.
+
+## Sections
+
+- [Home](https://burgershop.example.com/): the full homepage — hero, the six-burger menu with prices, the "make it a meal" offer, and the brand story.
+
+## Menu
+
+All burgers are made to order. Prices in US dollars.
+
+- Classic Burger — $8.50
+- Cheeseburger — $9.50
+- Bacon Burger — $10.50
+- Double Stack — $12.50
+- Spicy Jalapeño — $11.50
+- Veggie Burger — $9.50
+
+Fries and drinks are available as an add-on to any burger.
+
+## Frequently asked questions
+
+- **How much do the burgers cost?** They range from $8.50 for the Classic Burger to $12.50 for the Double Stack.
+- **How are the burgers cooked?** Beef patties are smashed to order and served on a toasted bun. Ingredients are simple and nothing is frozen.
+- **Can I add fries and a drink?** Yes — any burger can be turned into a meal with fries and a drink.
+- **How can I order?** Dine in, pickup, or delivery.
+
+## Contact
+
+Contact details, locations and opening hours are not published on this site yet.
