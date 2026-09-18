@@ -12,7 +12,7 @@ export default function StorySection() {
           className="w-full h-full object-cover"
         />
         <div
-          className="absolute inset-0"
+          className="absolute inset-0 sm:hidden"
           style={{
             background:
               "linear-gradient(to right, rgba(0,0,0,0.88) 0%, rgba(0,0,0,0.7) 38%, rgba(0,0,0,0.35) 58%, transparent 78%)",
