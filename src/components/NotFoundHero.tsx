@@ -14,14 +14,6 @@ export default function NotFoundHero() {
         className="absolute inset-0 h-full w-full object-cover object-[74%_center] sm:object-[64%_center] lg:object-center"
       />
 
-      {/* Desktop scrim: fades left-to-right off the empty plate, leaving the food untouched */}
-      <div
-        className="absolute inset-0 hidden sm:block"
-        style={{
-          background:
-            "linear-gradient(to right, rgba(11,12,12,1) 0%, rgba(11,12,12,0.96) 24%, rgba(11,12,12,0.79) 40%, rgba(11,12,12,0.36) 55%, transparent 72%)",
-        }}
-      />
       {/* Mobile stacks the type over the food, so the wash is vertical: opaque
           behind the copy, fading out to let the burger read at the bottom */}
       <div
