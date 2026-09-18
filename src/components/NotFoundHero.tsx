@@ -30,7 +30,7 @@ export default function NotFoundHero() {
             <span className="sr-only">404 — That bite doesn&apos;t exist.</span>
             <span
               aria-hidden="true"
-              className="text-distress block text-[clamp(5.5rem,15vw,15rem)] leading-[0.8] text-offwhite"
+              className="text-distress block text-[clamp(5.5rem,15vw,15rem)] leading-[0.8] text-white"
             >
               404
             </span>
