@@ -41,13 +41,13 @@ export default function NotFoundHero() {
             <span
               aria-hidden="true"
               style={{ filter: "url(#rough-edge)" }}
-              className="text-distress block text-[clamp(5.5rem,15vw,15rem)] leading-[0.8] text-white"
+              className="text-distress block text-[clamp(5.5rem,15vw,15rem)] leading-[0.8] text-[#F9F6F2]"
             >
               404
             </span>
             <span
               aria-hidden="true"
-              className="mt-3 block text-[clamp(1.9rem,4.6vw,4.75rem)] leading-[0.95] text-white"
+              className="mt-5 block text-[clamp(1.9rem,4.6vw,4.75rem)] leading-[0.95] text-white"
             >
               THAT BITE DOESN&apos;T
               <br />
