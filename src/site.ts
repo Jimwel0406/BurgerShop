@@ -1,4 +1,4 @@
-export const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL ?? "https://burgershop.example.com").replace(/\/$/, "")
+export const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL ?? "https://burger-shop-xi.vercel.app").replace(/\/$/, "")
 
 export const SITE_NAME = "Burger Shop"
 

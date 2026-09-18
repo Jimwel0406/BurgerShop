@@ -4,7 +4,7 @@
 
 ## Sections
 
-- [Home](https://burgershop.example.com/): the full homepage — hero, the six-burger menu with prices, the "make it a meal" offer, and the brand story.
+- [Home](https://burger-shop-xi.vercel.app/): the full homepage — hero, the six-burger menu with prices, the "make it a meal" offer, and the brand story.
 
 ## Menu
 

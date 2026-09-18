@@ -4,7 +4,7 @@
 
 A single-page website for a fictional smash-burger restaurant, built as a personal front-end design study.
 
-> **Not deployed yet.** When it is, set `NEXT_PUBLIC_SITE_URL` to the live origin and drop the link here.
+**Live: [burger-shop-xi.vercel.app](https://burger-shop-xi.vercel.app/)**
 
 ---
 
@@ -32,6 +32,7 @@ So the page is also a working demonstration of the fundamentals: it ships real m
 | **Accessibility** | Semantic landmarks, one `<h1>`, skip link, descriptive alt text with `alt=""` on decorative images, labelled controls, and a mobile menu that closes on toggle, `Escape`, or outside click with correct `aria-expanded`/`aria-controls`. `prefers-reduced-motion` is respected. |
 | **Security** | Content-Security-Policy, `X-Content-Type-Options`, `frame-ancestors 'none'`, `Referrer-Policy`, `Permissions-Policy`, and HSTS in production. Framework version header disabled. |
 | **Responsive** | Mobile-first, verified from 320 px through 1700 px+, including the awkward 1024–1440 range where the menu layout switches from stacked to two-column. |
+| **Monitoring** | Vercel Speed Insights collecting real-user Core Web Vitals from production. |
 
 ## Tech stack
 
@@ -60,7 +61,7 @@ npm run lint    # eslint
 
 | Variable | Default | Purpose |
 |---|---|---|
-| `NEXT_PUBLIC_SITE_URL` | `https://burgershop.example.com` | Absolute base URL used for the canonical tag, Open Graph, `sitemap.xml`, `robots.txt` and JSON-LD `@id` values. Set this to your deployed origin. |
+| `NEXT_PUBLIC_SITE_URL` | `https://burger-shop-xi.vercel.app` | Absolute base URL used for the canonical tag, Open Graph, `sitemap.xml`, `robots.txt` and JSON-LD `@id` values. Set this to override the deployed origin (e.g. a custom domain). |
 
 There are no secrets, APIs, databases or server routes — the site is entirely static.
 

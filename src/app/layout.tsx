@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Anton, Caveat, Playfair_Display, Montserrat } from "next/font/google";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import { SITE_URL, SITE_NAME, SITE_TITLE, SITE_DESCRIPTION, OG_IMAGE } from "@/site";
 import "./globals.css";
 
@@ -105,6 +106,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           }}
         />
         {children}
+        <SpeedInsights />
       </body>
     </html>
   );
