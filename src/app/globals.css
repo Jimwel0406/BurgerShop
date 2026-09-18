@@ -56,22 +56,13 @@ img {
 
 /* Distressed print texture for the 404 type — echoes the weathered logo
    mark. A tiled SVG noise mask erodes the glyph edges so the type reads as
-   printed rather than vector-crisp. Two intensities: strong for the 404,
-   soft for the headline so it stays legible at small sizes. */
-.text-distress,
-.text-distress-soft {
+   printed rather than vector-crisp. The threshold is tuned to ~7% erosion;
+   higher reads as digital static. */
+.text-distress {
   -webkit-mask-repeat: repeat;
   mask-repeat: repeat;
   -webkit-mask-size: 420px 420px;
   mask-size: 420px 420px;
-}
-
-.text-distress {
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='420' height='420'%3E%3Cfilter id='d'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.25' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -7 4.72'/%3E%3C/filter%3E%3Crect width='420' height='420' filter='url(%23d)'/%3E%3C/svg%3E");
   mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='420' height='420'%3E%3Cfilter id='d'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.25' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -7 4.72'/%3E%3C/filter%3E%3Crect width='420' height='420' filter='url(%23d)'/%3E%3C/svg%3E");
-}
-
-.text-distress-soft {
-  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='420' height='420'%3E%3Cfilter id='d'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.25' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -7 5.2'/%3E%3C/filter%3E%3Crect width='420' height='420' filter='url(%23d)'/%3E%3C/svg%3E");
-  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='420' height='420'%3E%3Cfilter id='d'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.25' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -7 5.2'/%3E%3C/filter%3E%3Crect width='420' height='420' filter='url(%23d)'/%3E%3C/svg%3E");
 }

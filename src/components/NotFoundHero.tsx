@@ -44,7 +44,7 @@ export default function NotFoundHero() {
             </span>
             <span
               aria-hidden="true"
-              className="text-distress-soft mt-3 block text-[clamp(1.9rem,4.6vw,4.75rem)] leading-[0.95] text-white"
+              className="mt-3 block text-[clamp(1.9rem,4.6vw,4.75rem)] leading-[0.95] text-white"
             >
               THAT BITE DOESN&apos;T
               <br />
@@ -59,10 +59,10 @@ export default function NotFoundHero() {
           <div className="mt-8 flex flex-wrap items-center gap-6 sm:mt-10 sm:gap-10">
             <Link
               href="/"
-              className="inline-flex items-center gap-6 bg-red-brand px-7 py-4 text-[11px] font-bold tracking-[0.14em] text-white transition-colors duration-200 hover:bg-red-hover sm:gap-8 sm:text-xs"
+              className="inline-flex items-center gap-6 bg-red-brand/80 px-4 py-2.5 text-[11px] font-semibold tracking-wider text-white transition-colors duration-200 hover:bg-red-brand sm:gap-8 sm:px-6 sm:py-3 sm:text-xs md:py-3.5 md:text-sm"
             >
               BACK TO HOME
-              <span className="relative inline-block h-[1.5px] w-5 bg-white align-middle sm:w-6">
+              <span className="relative inline-block h-[1.5px] w-5 bg-white align-middle sm:w-6 md:w-8">
                 <span className="absolute right-0 top-1/2 h-2 w-2 -translate-y-1/2 rotate-45 border-r-[1.5px] border-t-[1.5px] border-white" />
               </span>
             </Link>
