@@ -3,6 +3,16 @@ import Link from "next/link"
 export default function NotFoundHero() {
   return (
     <section className="relative flex h-[100svh] max-h-[1100px] min-h-[560px] items-start overflow-hidden bg-black-brand sm:items-center">
+      {/* Warps the glyph outline so the 404 reads as a hand-cut shape instead
+          of a geometric typeface. Filter region is oversized so the displaced
+          edges aren't clipped. */}
+      <svg aria-hidden="true" className="pointer-events-none absolute h-0 w-0">
+        <filter id="rough-edge" x="-15%" y="-15%" width="130%" height="130%">
+          <feTurbulence type="fractalNoise" baseFrequency="0.04" numOctaves="3" seed="11" result="noise" />
+          <feDisplacementMap in="SourceGraphic" in2="noise" scale="5" xChannelSelector="R" yChannelSelector="G" />
+        </filter>
+      </svg>
+
       {/* Hero photograph — burger sits right, the plate's dead space stays left for the type */}
       <img
         src="/404-hero.webp"
@@ -30,6 +40,7 @@ export default function NotFoundHero() {
             <span className="sr-only">404 — That bite doesn&apos;t exist.</span>
             <span
               aria-hidden="true"
+              style={{ filter: "url(#rough-edge)" }}
               className="text-distress block text-[clamp(5.5rem,15vw,15rem)] leading-[0.8] text-white"
             >
               404
