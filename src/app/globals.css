@@ -56,12 +56,17 @@ img {
 
 /* Distressed print texture for the 404 type — echoes the weathered logo
    mark. The grunge texture is black-on-white, so it masks by luminance:
-   white paper reveals the glyph, black speckle eats into it. */
+   white paper reveals the glyph, black speckle eats into it. The texture is
+   uneven (its left edge is ~5% black, well above the 2.9% average), so the
+   offset parks the glyphs over a ~2% band that reads as weathering rather
+   than damage. */
 .text-distress {
   -webkit-mask-mode: luminance;
   mask-mode: luminance;
   -webkit-mask-repeat: repeat;
   mask-repeat: repeat;
+  -webkit-mask-position: -900px -315px;
+  mask-position: -900px -315px;
   -webkit-mask-image: url("/grunge-mask.webp");
   mask-image: url("/grunge-mask.webp");
 }
